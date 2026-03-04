@@ -7,51 +7,65 @@
     <title>Fachrizal Kurniawan</title>
     <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
 
+    <meta name="description" content="Portfolio of Fachrizal Kurniawan, System Analyst and Web Developer from Indonesia">
+    <meta name="keywords" content="Fachrizal, Web Developer, System Analyst, Portfolio">
+    <meta name="author" content="Fachrizal Kurniawan">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
 </head> 
 
 <body>
-
     <!-------------------------- Header Area -------------------------->
     <header class="header-area">
         <div class="container">
             <div class="header">
-               
-                <a href="" class="logo">
-                    <img src="files/ttd.png" alt="" class="signature">
+                <!-- LOGO -->
+                <a href="#home" class="logo">
+                    <img src="files/ttd.png" alt="Fachrizal Logo" class="signature">
                     <i class="fa fa-bolt"></i>
                 </a>
-                   
-                <ul class="navbar">
+
+                <!-- NAVBAR -->
+                <ul class="navbar" id="mainNav">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                
-                <div class="menu_icon">
-                    <i class="fa fa-bars"></i>
-                </div>
 
+                <!-- HAMBURGER -->
+                <button class="menu_icon"
+                aria-label="Toggle navigation"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-        </div> 
+        </div>
     </header>
- 
+
     <!-------------------------- Home Page -------------------------->
     <div class="FirstElement" id="home">
         <div class="profile-photo">
             <img src="files/Me.JPG" alt="profile picture">
         </div>
-        <div class="profile-text">
-            <h5>Hi, I'm </h5><br>
-            <h1>Fachri</h1><br>
-            <p>Bachelor's degree in Information Systems from Amikom University Yogyakarta. Have experience as a system analyst and product owner on mobile and websites when interning in 2022. Apart from that, can use technologies such as CSS, HTML, PHP and basic JavaScript. Currently not working, but taking part in the Full-Stack Web Developer bootcamp program to deepen skills in Web Developer. An individual who is very responsible for the tasks assigned, also committed to providing creative and innovative solutions in web development</p>
-            
+        <div class="profile-text"><h5>Hi, I'm</h5>
+        <h1>Fachri</h1>
+        <h4 class="typed-role">I'm a <span class="typed"></span></h4>
+        <p>
+            Information Systems graduate with experience as a System Analyst and IT Specialist.
+            Passionate about building reliable web applications and improving system efficiency.
+            Currently focused on growing as a Full-Stack Web Developer.
+        </p>
             <div class="btn-group">
                 <a href="files/porto.pdf" class="btn   active">Download CV</a>
-                <a href="https://wa.me/628813904649" class="btn">Contact Me</a>
+                <a href="https://wa.me/6285244211946" class="btn">Contact Me</a>
             </div>
 
             <div class="social">
@@ -71,26 +85,45 @@
                 <div class="about-content">
                     <h4>About Me</h4>
                     <ul>
-                      <li>Currently I have obtained a Bachelor's degree in Information Systems in 2023 with a GPA of 3.86. I have built a strong foundation in software development, particularly in areas such as HTML, CSS SQL, and basic Javascript.</li>
-                      <li> My expertise in these areas allows me to approach projects with confidence and deliver high-quality results.I have a strong belief in the value of continuous learning and staying adaptable in the ever-evolving world of software engineering.</li>
-                      <li> I actively seek opportunities to expand my knowledge and skills, utilizing new technologies and approaches. Feel free to explore my work and contact me if you have questions or opportunities to collaborate. </li>
+                        <li> I am an Information Systems graduate from Universitas AMIKOM Yogyakarta (GPA 3.86) with a strong interest in web development and software engineering. I have built a solid foundation in technologies such as HTML, CSS, JavaScript, and SQL.</li>
+                        <li> I previously worked as an IT Specialist where I managed internal IT systems and developed the company’s official website from development to deployment. Through this experience, I gained hands-on experience in building and maintaining real-world web applications.</li>
+                        <li> I enjoy turning ideas into digital products and continuously learning new technologies to improve my development skills. I believe technology should solve real problems and create meaningful impact.</li>
+                        <li> Currently, I am focused on growing as a web developer and building projects that demonstrate clean design, scalable architecture, and practical solutions.</li>
                     </ul>
                 </div>
-                                  
                 <div class="about-skills">
                     <ul>
                         <li>Name: Fachri</li>
                         <li>Born: 2001</li>     
                         <li>From: Indonesia</li>
                         <li>Email: rizalmc10@gmail.com</li>
-                        <li>Availabiltiy: Fulltime</li>
-                        <li>Experience&lt;1yr</li>
+                        <li>Availability: Fulltime</li>
+                        <li>Experience : &gt; 2yr</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-title">
+                <h4>Tech Stack</h4>
+            </div>
+            <div class="stack-grid">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>React</span>
+                <span>MongoDB</span>
+                <span>SQL</span>
+                <span>Node.js</span>
+                <span>Tailwind</span>
+
+            </div>
+        </div>
+    </section>
 
         <!-------------- Education & Internship -------------->
     <section class="education-content" id="education">
@@ -105,75 +138,169 @@
                                 <!-- Timeline-item -->
                                 <div class="timeline-item">
                                     <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        AMIKOM University, Yogyakarta
-                                    </h3>
-                                    <h4 class="timeline-title">Information system</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2019-2023
-                                    </h4>
-                                </div> 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        My Skill Bootcamp
-                                    </h3>
-                                    <h4 class="timeline-title"> Data Analysis: Fullstack Intensive Bootcamp</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 1 Month
-                                    </h4>
-                                </div>
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        Hari Senin Bootcamp
-                                    </h3>
-                                    <h4 class="timeline-title">Full-Stack development</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 6 Months
-                                    </h4>
-                                </div>
 
+                                    <div class="edu-card">
+                                        <h3 class="timeline-title">AMIKOM University, Yogyakarta</h3>
+                                        <h4 class="timeline-subtitle">Bachelor of Information Systems</h4>
+                                        <h4 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2019 – 2023
+                                        </h4>
+
+                                        <div class="edu-tags">
+                                            <span>GPA 3.86</span>
+                                            <span>Information Systems</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+
+                                    <div class="edu-card">
+                                        <h3 class="timeline-title">MySkill Intensive Bootcamp</h3>
+                                        <h4 class="timeline-subtitle">Data Analysis: Fullstack Intensive</h4>
+                                        <h4 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> Jul – Aug 2023
+                                        </h4>
+
+                                        <div class="timeline-text">
+                                            <ul class="edu-points">
+                                                <li>Learned data analysis fundamentals and basic statistics.</li>
+                                                <li>Performed data cleansing, formatting, and visualization.</li>
+                                                <li>Worked with SQL, Python, and data processing workflows.</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="edu-tags">
+                                            <span>SQL</span>
+                                            <span>Python</span>
+                                            <span>Data Viz</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+
+                                    <div class="edu-card">
+                                        <h3 class="timeline-title">Harisenin Bootcamp</h3>
+                                        <h4 class="timeline-subtitle">Full Stack Developer</h4>
+                                        <h4 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> Dec 2023 – May 2024
+                                        </h4>
+
+                                        <div class="timeline-text">
+                                            <ul class="edu-points">
+                                                <li>Built full-stack web applications using modern JavaScript stack.</li>
+                                                <li>Developed REST APIs with Node.js and MySQL integration.</li>
+                                                <li>Implemented responsive UI using HTML, CSS, and React.</li>
+                                                <li>Completed final project with GPA 3.50.</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="edu-tags">
+                                            <span>React</span>
+                                            <span>Node.js</span>
+                                            <span>MySQL</span>
+                                            <span>REST API</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="internship">
-                    <h3 class="title">Internship</h3>
+                <div class="internship" id="experience">
+                    <h3 class="title">Work Experience</h3>
                     <div class="row">
                         <div class="timeline-box">
                             <div class="timeline">
-                                
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        assistant professor
-                                    </h3>
-                                    <h4 class="timeline-title">Database (SQL)</h4>
-                                    <h4 class="timeline-title">
+
+                            <div class="timeline-item">
+                                <div class="circle-dot"></div>
+
+                                <div class="exp-card">
+                                    <h3 class="timeline-title">Teaching Assistant</h3>
+                                    <h4 class="timeline-subtitle">Database (SQL)</h4>
+                                    <h4 class="timeline-date">
                                         <i class="fa fa-calendar"></i> 2 Semesters
                                     </h4>
-                                    <li class="timeline-text">Assist lecturers in teaching subjects related to databases (SQL). Creating a database from design to a complete database
-                                    </li>
-                                </div> 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">BIGIO</h3>
-                                    <h4 class="timeline-title">SYSTEM ANALYST</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 6 Months
-                                    </h4>
-                                    <li class="timeline-text">Experienced in analyzing and proficient in creating documents as needed when creating software applications. Proficient in time management and reliable in handling problems that occur within the team. Intern for over 5 months, gaining hands-on experience and improving skills.</li>
+
+                                    <div class="timeline-text">
+                                        <ul class="exp-points">
+                                            <li>Assisted lecturers in delivering database (SQL) courses.</li>
+                                            <li>Guided students in database design and implementation.</li>
+                                            <li>Supported hands-on lab sessions and technical discussions.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="exp-tags">
+                                        <span>SQL</span>
+                                        <span>Database Design</span>
+                                        <span>Teaching</span>
+                                    </div>
                                 </div>
-                                
+                            </div>
+                            <!-- Timeline-item -->
+                            <div class="timeline-item">
+                                <div class="circle-dot"></div>
+
+                                <div class="exp-card">
+                                    <h3 class="timeline-title">BIGIO</h3>
+                                    <h4 class="timeline-subtitle">System Analyst Intern</h4>
+                                    <h4 class="timeline-date">
+                                    <i class="fa fa-calendar"></i> 6 Months
+                                    </h4>
+
+                                    <div class="timeline-text">
+                                        <ul class="exp-points">
+                                            <li>Analyzed business requirements for mobile and web applications.</li>
+                                            <li>Prepared functional and technical documentation for development teams.</li>
+                                            <li>Collaborated with cross-functional teams to resolve project issues.</li>
+                                            <li>Strengthened time management and problem-solving skills during internship.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="exp-tags">
+                                        <span>Scrum</span>
+                                        <span>Kanban</span>
+                                        <span>Analysis</span>
+                                        <span>Documentation</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Timeline-item -->
+                            <div class="timeline-item">
+                                <div class="circle-dot"></div>
+
+                                <div class="exp-card">
+                                    <h3 class="timeline-title">BPRS Dana Hidayatullah</h3>
+                                    <h4 class="timeline-subtitle">IT Specialist</h4>
+                                    <h4 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 1 Year
+                                    </h4>
+
+                                    <div class="timeline-text">
+                                        <ul class="exp-points">
+                                            <li>Managed and enhanced company websites and internal IT systems.</li>
+                                            <li>Maintained IT infrastructure and provided operational technical support.</li>
+                                            <li>Prepared weekly and monthly reports to monitor system performance.</li>
+                                            <li>Improved system reliability, security, and process efficiency.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="exp-tags">
+                                        <span>Web Dev</span>
+                                        <span>IT Support</span>
+                                        <span>Infrastructure</span>
+                                        <span>Security</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </section>
@@ -183,39 +310,26 @@
     <section class="project-content" id="projects">
         <div class="container">
             <div class="project-title">
-                <h4>My Future Projects</h4>
+                <h4>Featured Projects</h4>
                 <p>Discover my future projects, where creativity meets innovation</p>
             </div>
             <div class="projects">
                 <!-- 1st Project -->
-                <div class="project">
-                    <i class="fa fa-shop"></i>
-                    <h4>E-commerce using PHP</h4>
-                    <p>a simple e-commerce website where user can buy something what he want. users can make an account and can make a shop by herself</p>
-                </div>
-                 <!-- 2nd Project -->
-                 <div class="project">
-                    <i class="fa fa-film"></i>
-                    <h4>Watch Movie</h4>
-                    <p>a website that allows users to watch films anywhere.</p>
-                </div>
-                <!-- 3rd Project -->
-                <div class="project">
-                    <i class="fa fa-book"></i>
-                    <h4>Wedding Invitation</h4>
-                    <p>create a website to invite friends to come to a wedding. Requires a database to display data on invited guests. will be created using react.js technology.</p>
-                </div>
-                <!-- 4th Project -->
-                <div class="project">
-                    <i class="fa fa-desktop"></i>
-                    <h4>Portfolio Website</h4>
-                    <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to introduce myself, share my projects, and provide information about my education and internship.</p>
-                </div>
-                <!-- 5th Project -->
-                <div class="project">
-                    <i class="fa fa-desktop"></i>
-                    <h4>Organization Website</h4>
-                    <p>The organization's website aims to record all active members and alumni. Users who are logged in can create blogs on the website.</p>
+                <div class="project glass">
+                    <img src="files/project1.JPG" alt="Ecommerce project">
+                    <h4>Corporate Website — BPRS Dana Hidayatullah</h4>
+                    <p>Developed the official corporate website of BPRS Dana Hidayatullah with responsive UI, REST API integration, and content management features to support company transparency and customer engagement.</p>
+                    <div class="project-links">
+                        <a href="https://www.bprsdanahidayatullah.co.id/" target="_blank" rel="noopener">
+                            Live Demo
+                        </a>
+                    </div>
+                    <div class="exp-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Cloudinary</span>
+                    </div>
                 </div>
             </div>
         </div>
